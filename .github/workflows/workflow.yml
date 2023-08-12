@@ -13,8 +13,8 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
     
-      # - name: Build with Gradle
-      #   run: ./gradlew assemble
+      - name: Build with Gradle
+        run: ./gradlew assemble
 
       - name: Run Tests with Gradle
         run: ./gradlew test
