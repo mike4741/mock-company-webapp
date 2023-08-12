@@ -17,6 +17,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 @AutoConfigureMockMvc
 class ProductsControllerSpec extends Specification {
 
+    //test
     private static final Collection<ProductItem> mockProducts = Arrays.asList(
             new ProductItem(name: "Item 1", description: "Test Item 1", cost: 100, image: ""),
             new ProductItem(name: "Item 2", description: "Test Item 2", cost: 100, image: ""),
