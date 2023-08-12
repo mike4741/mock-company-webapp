@@ -5,6 +5,13 @@ on:
     branches:
       - master
 
-    Build: ./gradlew assemble
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
 
-    Test: ./gradlew test
+    steps:
+      - name: Build with Gradle
+        run: ./gradlew assemble
+
+      - name: Run Tests with Gradle
+        run: ./gradlew test
